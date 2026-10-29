@@ -1,0 +1,46 @@
+def addition():
+    num1 = int(input("ENTER YOUR FIRST NUMBER FOR ADDITION : "))
+    num2 = int(input("ENTER YOUR SECOND NUMBER FOR ADDITION : "))
+    s = num1 + num2
+    print("ADDTION OF TWO NUMBER IS : ",s)
+
+
+def subtraction():
+    num1 = int(input("ENTER YOUR FIRST NUMBER FOR subtraction : "))
+    num2 = int(input("ENTER YOUR SECOND NUMBER FOR subtraction : "))
+    s = num1 - num2
+    print("subtraction OF TWO NUMBER IS : ",s)
+
+
+def multiplication():
+    num1 = int(input("ENTER YOUR FIRST NUMBER FOR multiplication : "))
+    num2 = int(input("ENTER YOUR SECOND NUMBER FOR multiplication : "))
+    s = num1 * num2
+    print("multiplication OF TWO NUMBER IS : ",s)
+
+
+def division():
+    num1 = float(input("ENTER YOUR FIRST NUMBER FOR division : "))
+    num2 = float(input("ENTER YOUR SECOND NUMBER FOR division : "))
+    s = num1 / num2
+    print("division OF TWO NUMBER IS : ",s)
+
+print("PRESS 1 FOR ADDITION")
+
+print("PRESS 2 FOR SUBSTRACTION")
+print("PRESS 3 FOR MULTPLICATION")
+print("PRESS 4 FOR DIVISION")
+
+choice = int(input("ENTER YOUR CHOICE : "))
+
+match choice:
+    case 1:
+        addition()
+    case 2:
+        subtraction()
+    case 3:
+        multiplication()
+    case 4:
+        division()
+    case _:
+        print("ENTER THE RIGHT CHOICE")
