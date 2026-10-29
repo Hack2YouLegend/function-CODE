@@ -1,0 +1,48 @@
+def square():
+    a = int(input("ENTER THE SIDE OF SQAURE FOR AREA : "))
+    s = a * a
+    print("AREA OF SQUARE IS : ",s)
+
+def rectangle():
+    a = int(input("ENTER THE LENGTH OF RECTANGLE FOR AREA : "))
+
+    b = int(input("ENTER THE BREATH OF RECTANGLE FOR AREA : "))
+    s = a * b
+    print("AREA OF RECTANGLE IS :",s)
+
+def circle():
+
+    a = float(input("ENTER THE RADIUS OF THE CIRCLE : "))
+    s = 3.14 * a * a
+    print("AREA OF CIRCLE IS : ",s)
+
+def traingle():
+    a = float(input("ENTER THE LENGTH OF TRAINGLE : "))
+
+    b = float(input("ENTER THE BREATH OF TRAINGLE : "))
+    s = 1/2 * a * b
+    print("AREA OF TRAINGLE IS : ",s)
+
+
+
+
+
+print("PRESS 1 FOR SQUARE")
+
+print("PRESS 2 FOR RECTANGLE")
+print("PRESS 3 FOR CIRCLE")
+print("PRESS 4 FOR TRAINGLE")
+
+choice = int(input("ENTER YOUR CHOICE : "))
+
+match choice:
+    case 1:
+        square()
+    case 2:
+        rectangle()
+    case 3:
+        circle()
+    case 4:
+        traingle()
+    case _:
+        print("ENTER THE RIGHT CHOICE")
