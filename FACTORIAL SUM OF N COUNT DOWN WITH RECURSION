@@ -1,0 +1,32 @@
+def factorail(n):
+    if n == 0 or n ==1:
+        return 1
+    else:
+        return n * factorail(n-1)
+
+a = int(input("Enter a number to calculate its factorial: "))
+f = factorail(a)
+print("THE FACTORIAL OF YOUR NUMBER IS : ", f)
+
+
+def sum(b):
+    if b==0 or b==1:
+        return 1
+    else:
+        return b + sum(b-1)
+
+c = int(input("Enter a number to calculate its sum: "))
+s = sum(c)
+print("THE SUM OF YOUR NUMBER IS : ", s)
+
+
+
+def countdown(d):
+    if d == 0:
+        print("Countdown finished!")
+    else:
+        print(d)
+        countdown(d - 1)
+
+g = int(input("Enter a number to start countdown: "))
+countdown(g)
